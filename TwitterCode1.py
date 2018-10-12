@@ -1,10 +1,10 @@
 import tweepy 
 import json
 
-consumer_key="asd"
-consumer_secret="asd"
-access_token="asd"
-access_token_secret="asd"
+consumer_key="7o9au5o3jE8G57iMSd4zjnEin"
+consumer_secret="D4EkOCWRDlXQDlF8WnQnbvMgWoTGxIhitU9iBNZKAu7M70jKHg"
+access_token="2327831132-spuOdDrzUuoaYXFt59iDjQUx00YdV6kmhemK4SR"
+access_token_secret="QmT2Na3naObKA9TZLJcj9kbdL2beVavi3ae8bCwmW0eFw"
 
 auth = tweepy.OAuthHandler(consumer_key, consumer_secret)
 auth.set_access_token(access_token, access_token_secret)
@@ -13,7 +13,7 @@ api = tweepy.API(auth, wait_on_rate_limit=True,
 				   wait_on_rate_limit_notify=True)
 
 
-searchQuery = 'Ritalin OR Adderall OR Concerta OR Dexedrine'  # this is what we're searching for
+searchQuery = 'taylor swift'  # this is what we're searching for
 maxTweets = 10000000 # Some arbitrary large number
 tweetsPerQry = 100  # this is the max the API permits
 fName = 'tweetsExtended.txt' # We'll store the tweets in a text file.
